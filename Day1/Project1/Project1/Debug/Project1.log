@@ -1,0 +1,2 @@
+﻿printf_escape.obj : error LNK2005: _main이(가) printf_digit.obj에 이미 정의되어 있습니다.
+C:\Users\USER\source\repos\DataStructure_Algorithm_Bootcamp\Day1\Helloworld\Project1\Debug\Project1.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
