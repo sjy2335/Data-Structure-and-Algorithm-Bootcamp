@@ -1,0 +1,4 @@
+﻿  SinglyLinkedList.c
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day5\Project1\Project1\SinglyLinkedList.c(161,21): warning C4133: '함수': 'listNode *'과(와) 'char *' 사이의 형식이 호환되지 않습니다.
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day5\Project1\Project1\SinglyLinkedList.c(179): warning C4715: 'find_pre': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  Project1.vcxproj -> C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day5\Project1\Debug\Project1.exe
