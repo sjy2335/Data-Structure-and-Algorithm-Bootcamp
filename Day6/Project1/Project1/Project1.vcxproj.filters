@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Downloads\cQueue.c">
+    <ClCompile Include="cQueue.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\Downloads\main (3).c">
+    <ClCompile Include="main (3).c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\Downloads\cQueue.h">
+    <ClInclude Include="cQueue.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
