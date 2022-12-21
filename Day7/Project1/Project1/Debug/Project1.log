@@ -1,0 +1,11 @@
+﻿  traversalBT.c
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Project1\traversalBT.c(11,22): warning C4133: '=': 'treeNode *'과(와) 'treeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Project1\traversalBT.c(12,24): warning C4133: '=': 'treeNode *'과(와) 'treeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Project1\traversalBT.c(19,22): warning C4133: '함수': 'treeNode *'과(와) 'treeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Project1\traversalBT.c(20,23): warning C4133: '함수': 'treeNode *'과(와) 'treeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Project1\traversalBT.c(27,21): warning C4133: '함수': 'treeNode *'과(와) 'treeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Project1\traversalBT.c(29,22): warning C4133: '함수': 'treeNode *'과(와) 'treeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Project1\traversalBT.c(36,23): warning C4133: '함수': 'treeNode *'과(와) 'treeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Project1\traversalBT.c(37,24): warning C4133: '함수': 'treeNode *'과(와) 'treeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Project1\traversalBT.c(13): warning C4716: 'makeRootNode': 값을 반환해야 합니다.
+  Project1.vcxproj -> C:\Users\USER\Documents\GitHub\Data-Structure-and-Algorithm-Bootcamp\Day7\Project1\Debug\Project1.exe
