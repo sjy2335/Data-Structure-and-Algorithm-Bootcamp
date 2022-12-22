@@ -62,17 +62,8 @@ treeNode* insert(treeNode* root, element x) {
 void erase(treeNode* root, element key) {
 
 	//First find parent and target node
-	treeNode* tmp = root;
-	treeNode* parent = NULL;
-
-	while (tmp) {
-		if (key == tmp->key) {
-			break;
-		}
-		parent = tmp;
-		if (key < parent->key) tmp = parent->left;
-		else tmp = parent->right;
-	}
+	treeNode* tmp = find(root, key);
+	treeNode* parent = findParent(root, key);
 
 	// Can't find
 	if (!tmp)
@@ -85,8 +76,8 @@ void erase(treeNode* root, element key) {
 	else if (tmp->left && tmp->right)
 	{
 		treeNode* success = findSuccess(tmp->left);
-		int sk = success->key;
 		treeNode* SP = findParent(root, success->key);
+		int sk = success->key;
 		
 		// When Recursively Calling "erase" with Leaf Node, Error Occurs.
 		if (!success->left && !success->right) {
@@ -96,14 +87,6 @@ void erase(treeNode* root, element key) {
 			erase(tmp->left, success->key);
 		}
 		tmp->key = sk;
-
-		/*if (success->left) {
-			SP->right = success->left;
-		}
-		if (success == SP->left) {
-			SP->left = NULL;
-		}
-		free(success);*/
 	}
 
 	// Only one child exists
@@ -141,7 +124,7 @@ treeNode* findSuccess(treeNode* root) {
 	while (tmp->right != NULL) {
 		tmp = tmp->right;
 	}
-	printf("Success: %d\n", tmp->key);
+	//printf("Success: %d\n", tmp->key);
 	return tmp;
 }
 
@@ -156,6 +139,6 @@ treeNode* findParent(treeNode* root, element key) {
 		if (key < parent->key) tmp = parent->left;
 		else tmp = parent->right;
 	}
-	printf("parent: %d\n", parent->key);
+	//printf("parent: %d\n", parent->key);
 	return parent;
 }
