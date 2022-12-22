@@ -7,6 +7,7 @@ void menu(void);
 int main(void) {
   treeNode* root = NULL;
   treeNode* foundedNode = NULL;
+
   int action = 0, key = 0;
 
   root = insert(root, 8);
