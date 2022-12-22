@@ -79,11 +79,8 @@ void erase(treeNode* root, element key) {
 		int sk = success->key;
 		
 		// When Recursively Calling "erase" with Leaf Node, Error Occurs.
-
 		if (!success->left && !success->right) erase(SP, success->key);
-
 		else erase(tmp->left, success->key);
-
 		tmp->key = sk;
 	}
 
