@@ -66,8 +66,7 @@ void erase(treeNode* root, element key) {
 	treeNode* parent = findParent(root, key);
 
 	// Can't find
-	if (!tmp)
-	{
+	if (!tmp) {
 		printf("Cannot find the node.\n");
 		return;
 	}
@@ -80,25 +79,22 @@ void erase(treeNode* root, element key) {
 		int sk = success->key;
 		
 		// When Recursively Calling "erase" with Leaf Node, Error Occurs.
-		if (!success->left && !success->right) {
-			erase(SP, success->key);
-		}
-		else {
-			erase(tmp->left, success->key);
-		}
+
+		if (!success->left && !success->right) erase(SP, success->key);
+
+		else erase(tmp->left, success->key);
+
 		tmp->key = sk;
 	}
 
 	// Only one child exists
 	else if (tmp->left || tmp->right)
 	{
-		if (tmp->left)
-		{
+		if (tmp->left) {
 			if (parent->left == tmp) parent->left = tmp->left;
 			else parent->right = tmp->left;
 		}
-		else
-		{
+		else {
 			if (parent->left == tmp) parent->left = tmp->right;
 			else parent->right = tmp->right;
 		}
@@ -107,13 +103,8 @@ void erase(treeNode* root, element key) {
 
 	// Child node X
 	else {
-		
-		if (parent->left == tmp) {
-			parent->left = NULL;
-		}
-		else {
-			parent->right = NULL;
-		}
+		if (parent->left == tmp) parent->left = NULL;
+		else parent->right = NULL;
 		free(tmp);
 	}
 }
