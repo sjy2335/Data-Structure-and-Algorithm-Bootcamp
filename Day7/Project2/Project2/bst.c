@@ -37,20 +37,20 @@ treeNode* insert(treeNode* root, element x) {
 		return root;
 	}
 
-	treeNode* p = root;
-	treeNode* q = NULL;
-	while (p) {
-		if (x == p->key) {
+	treeNode* tmp = root;
+	treeNode* parent = NULL;
+	while (tmp) {
+		if (x == tmp->key) {
 			printf("The node already exists.\n");
 			return;
 		}
-		q = p;
-		if (x < p->key) p = p->left;
-		else p = p->right;
+		parent = tmp;
+		if (x < tmp->key) tmp = tmp->left;
+		else tmp = tmp->right;
 	}
 
-	if (x < q->key) q->left = new;
-	else q->right = new;
+	if (x < parent->key) parent->left = new;
+	else parent->right = new;
 }
 
 // Delete node which has key
@@ -80,7 +80,9 @@ void erase(treeNode* root, element key) {
 		
 		// When Recursively Calling "erase" with Leaf Node, Error Occurs.
 		if (!success->left && !success->right) erase(SP, success->key);
+
 		else erase(tmp->left, success->key);
+
 		tmp->key = sk;
 	}
 
